@@ -1,0 +1,175 @@
+
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-line: underline;
+  }
+  h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-line: underline;
+    color:lightseagreen;
+  }
+  #cliente-pantalla{
+    font-family: sans-serif;
+  }
+  #reserva-pantalla{
+    font-family: sans-serif;
+  }
+  #reparacion-pantall{
+    font-family: sans-serif;
+  }
+   
+/* Estilos para pantalla pequeña*/
+@media (max-width: 1049px) {
+  body {
+    background-color: rgb(198, 223, 234);
+    color: black
+  }
+  
+  header {
+    background-color: rgb(81, 81, 132);
+    border-radius: 50%;
+    padding: 20px;
+  }
+  
+  header .foto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  h1.titulo {
+    color: white;
+  }
+  
+  h3 {
+    color: rgb(123, 112, 112);
+  }
+  
+  .cliente,
+  .reservas,
+  .reparaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cliente input[type="text"],
+  .reservas input[type="text"],
+  .reparaciones input[type="text"],
+  #res-date {
+    margin-bottom: 10px;
+    background-color: white;
+    color: rgb(45, 42, 42);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    resize: vertical;
+  }
+  
+  .cliente button,
+  .reservas button,
+  .reparaciones button {
+    margin-top: 10px;
+    background-color: rgb(81, 81, 132);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #cliente-pantalla,
+  #reserva-pantalla,
+  #reparacion-pantalla {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+
+  /* Estilos para pantalla de ordenador */
+
+  @media (min-width: 1050px) {
+    body {
+      background-color: rgb(67, 65, 65);
+      color: rgb(182, 178, 178);
+    }
+  
+    header {
+      background-color: rgb(35, 32, 32);
+      border-radius: 50%;
+      padding: 20px;
+    }
+  
+    header .foto {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+  
+    h1.titulo {
+      color: white;
+    }
+  
+    h3 {
+      color: #c9c5c5;
+    }
+  
+    .cliente,
+    .reservas,
+    .reparaciones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cliente input[type="text"],
+    .reservas input[type="text"],
+    .reparaciones input[type="text"],
+    #res-date {
+      margin-bottom: 10px;
+      background-color: rgba(95, 95, 95, 0.8);
+      color: white;
+      width: 80%;
+      box-sizing: border-box;
+      padding: 8px;
+      resize: vertical;
+    }
+  
+    .cliente button,
+    .reservas button,
+    .reparaciones button {
+      margin-top: 10px;
+      background-color: rgb(35, 32, 32);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      width: 40%;
+    }
+    #cliente-pantalla,
+    #reserva-pantalla,
+    #reparacion-pantalla {
+      
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base de datos Taller</title>
+</head>
+<body>
+    <header> 
+        <img class = "foto" src =https://i.blogs.es/3fa974/estrellas_michelin_349/450_1000.jpg>
+        <h1 class = "titulo">Automecanica DanCar</h1>
+    </header>
+    <main>
+        <div class ="clientes">
+            <div class = "cliente">
+                <h3>Cliente</h3>
+                <input type = "text" id="add-dni" name = "add-dni" placeholder = "Dni Cliente sin letra">
+                <input type = "text" id="add-nombre" name = "add-nombre "  placeholder = "Nombre">
+                <input type = "text" id="add-apellidos" name = "add-apellidos" placeholder = "Apellidos">
+                <input type = "text" id="add-matricula" name = "add-matricula" placeholder = "Matricula Vehiculo">
+                <input type = "text" id="add-modelo" name = "add-modelo"  placeholder = "Modelo Coche">
+                <input type = "text" id="add-motor" name = "add-motor" placeholder = "Motor">
+                <button id = "addbtn">Crear Cliente por body</button>
+                <button id = "mod-btn">Modificar Cliente por body</button>
+                <button id = "see-btn-cliente">Ver Cliente por dni sin letra</button>
+            </div>
+            <div id= "cliente-pantalla" ></div>
+        </div>
+        
+        <div class ="reservasG">
+            <div class = "reservas">
+                <h3>Reservas</h3>
+                <input type = "text" id="res-matricula" name = "res-matricular" placeholder = "Matricula 0000AAA">
+                <input type = "text" id="res-cliente" name = "res-cliente" placeholder = "Nombre y apellido Cliente">
+                <input type = "text" id="res-telefono" name = "res-telefono" placeholder = "Telefono Cliente">
+                <input type = "date" id="res-date" name = "res-date">
+                <input type = "text" id="res-reparacion" name = "res-reparacion" placeholder = "Trabajos a realizar ">
+                <input type = "text" id="res-tiempo" name = "res-tiempo" placeholder = "Tiempo reparacion = 1.5">
+                <button id = "res-btn">Reservar cita por body</button>
+                <button id = "delete-btn">Eliminar cita por matricula</button>
+                <button id = "see-btn-cita">Ver citas por dia</button>     
+            </div>
+            <div id= "reserva-pantalla" ></div>
+        </div>
+
+        <div class ="reparacionesG">
+            <div class = "reparaciones">
+                <h3>Reparaciones</h3>
+                <input type = "text" id="rep-matricula" name = "rep-matricula" placeholder = "Matricula 0000AAA">
+                <input type = "text" id="rep-km" name = "rep-km" placeholder = "Kilometros Vehiculo">
+                <input type = "text" id="rep-reparacion" name = "rep-reparacion" placeholder = "Trabajos realizados ">
+                <button id = "rep-btn">Guardar reparacion por body</button>
+                <button id = "bus-btn">Buscar reparaciones por matricula</button>
+                <button id = "mod-btn-rep">Modificar reparacion por body</button>
+            </div>
+            <div id= "reparacion-pantalla" ></div>
+        </div>
+
+        <script src="script.js"></script>
+       
+        
+    </main>
+</body>
+</html>
